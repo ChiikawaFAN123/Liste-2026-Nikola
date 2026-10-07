@@ -12,6 +12,7 @@ namespace Liste_2026_Nikola
         {
             Console.WriteLine("pozdrav 3-9");
             Console.WriteLine("pozdrav cao cao cao cao");
+            Console.WriteLine("pozdrav hi");
         }
     }
 }
