@@ -53,6 +53,38 @@ namespace Liste_2026_Nikola
             d.Dequeue();
             Console.WriteLine(d.Peek());
 
+
+            //NIZ LISTI
+            List<int> sused = new List<int>();
+            List<int>[] grane = new List<int>[5];
+            for (int i = 1; i <= 5; i++)
+            {
+                grane[i] = new List<int>();
+            }
+            grane[2].Add(3);
+            grane[2].Add(4);
+            grane[2].Add(2);
+            Console.WriteLine(grane[2][1]);
+
+            //GRAFOVI
+            List<grana>[] graf = new List<grana>[5];
+            for (int i = 1; i < 5; i++)
+            {
+                graf[i] = new List<grana>();
+            }
+            grana nova = new grana();
+            nova.kraj = 2;
+            nova.tezina = 10;
+
+            graf[0].Add(nova);
+
+            nova = new grana();
+            nova.kraj = 3;
+            nova.tezina = 5;
+            graf[0].Add(nova);
+
+            Console.WriteLine(graf[0][1].kraj);
+
         }
     }
 }
